@@ -4,38 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medisur</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Configuración de Tailwind CSS -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        display: ['Yeseva One', 'sans-serif'],
+                        title: ['Work Sans', 'sans-serif'],
+                        caption: ['Work Sans', 'sans-serif'],
+                        body: ['Work Sans', 'sans-serif'],
+                        button: ['Work Sans', 'sans-serif'],
+                    },
+                    fontSize: {
+                        'display-1': '3rem', // 48px
+                        'display-2': '2rem', // 32px
+                        'title': '1.625rem', // 26px
+                        'caption': '1.125rem', // 18px
+                        'body': '1rem', // 16px
+                        'body-2': '1.125rem', // 18px
+                        'button': '1rem', // 16px
+                        'small': '0.875rem', // 14px
+                    },
+                    colors: {
+                        'azul': '#0060AD',
+                        'azul-oscuro': '#1F2B6C',
+                        'celeste': '#159EEC',
+                        'celeste-claro': '#BFD2F8',
+                        'verde': '#01A5A6',
+                    },
+                    lineHeight: {
+                        relaxed: '1.75',
+                    },
+                },
+            },
+        }
+    </script>
 </head>
-<body>
+<body class="text-base">
     <!-- Header -->
     <header>
-        <div>
-            <h1>MEDISUR</h1>
-            <div>
-                <div>
-                    <img src="Resources/phone-icon.svg" alt="Teléfono">
-                    <div>EMERGENCIAS</div>
-                    <div>903-048-168</div>
+        <div class="container mx-auto flex justify-between items-center px-4 py-2">
+            <h1 class="text-display-1 font-display">
+                <span class="text-azul">MEDI</span><span class="text-verde">SUR</span>
+            </h1>
+            <div class="flex space-x-4 sm:space-x-8">
+                <div class="flex items-center space-x-2">
+                    <img src="Resources/phone-icon.svg" alt="Teléfono" class="w-6 h-6 sm:w-10 sm:h-10">
+                    <div>
+                        <div class="text-azul-oscuro font-body text-sm sm:text-base">EMERGENCIAS</div>
+                        <div class="text-verde font-body text-sm sm:text-base">903-048-168</div>
+                    </div>
                 </div>
-                <div>
-                    <img src="Resources/schedule-icon.svg" alt="Horario">
-                    <div>NUESTRO HORARIO</div>
-                    <div>07:00 - 20:00</div>
-                </div>
-                <div>
-                    <img src="Resources/location-icon.svg" alt="Ubicación">
-                    <div>UBICACION</div>
-                    <div>C. Cabrera N°42</div>
-                </div>
+              </div>
+              <!-- Horario -->
+              <div class="flex items-center space-x-2">
+                  <img src="Resources/schedule-icon.svg" alt="Horario" class="w-6 h-6 sm:w-10 sm:h-10">
+                  <div>
+                      <div class="text-azul-oscuro font-body text-sm sm:text-base">NUESTRO HORARIO</div>
+                      <div class="text-verde font-body text-sm sm:text-base">07:00 - 20:00</div>
+                  </div>
+              </div>
+              <!-- Ubicación -->
+              <div class="flex items-center space-x-2">
+                  <img src="Resources/location-icon.svg" alt="Ubicación" class="w-6 h-6 sm:w-10 sm:h-10">
+                  <div>
+                      <div class="text-azul-oscuro font-body text-sm sm:text-base">UBICACIÓN</div>
+                      <div class="text-verde font-body text-sm sm:text-base">C. Cabrera N°42</div>
+                  </div>
+              </div>
             </div>
         </div>
-        <nav>
-            <div>Citas</div>
-            <div>Acerca de Nosotros</div>
-            <div>Especialidades</div>
-            <div>Doctores</div>
-            <div>News</div>
+        <nav class="bg-azul h-16 flex items-center">
+            <div class="container mx-auto flex justify-around sm:justify-center space-x-4 sm:space-x-7 text-white h-full">
+                <div class="font-body leading-none flex items-center">Citas</div>
+                <div class="font-body leading-none flex items-center">Acerca de Nosotros</div>
+                <div class="font-body leading-none flex items-center">Especialidades</div>
+               
+            </div>
         </nav>
     </header>
+</body>
+</html>
+
 
     <!-- Main Content -->
     <main>
