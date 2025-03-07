@@ -1,0 +1,26 @@
+{
+  "citas": [
+    {
+      "id": "a83e",
+      "nombre": "asd",
+      "genero": "otro",
+      "email": "asd@gmail.com",
+      "celular": "6723672",
+      "fecha": "2025-03-21",
+      "hora": "18:54",
+      "especialidad": "medicina-general",
+      "mensaje": "asd"
+    },
+    {
+      "id": "13de",
+      "nombre": "Fernando",
+      "genero": "masculino",
+      "email": "fernando@gmail.com",
+      "celular": "987654321",
+      "fecha": "2025-03-14",
+      "hora": "10:00",
+      "especialidad": "medicina-general",
+      "mensaje": "prueba1"
+    }
+  ]
+}

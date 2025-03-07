@@ -1,1 +1,109 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&family=Work+Sans:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+
+
+/* COLORES */
+:root {
+  --azul: #0060AD;
+  --azul-oscuro: #1F2B6C;
+  --celeste: #159EEC;
+  --celeste-claro: #BFD2F8;
+  --verde: #01A5A6;
+  --text-color: #333;
+}
+
+/* TIPOGRAFÍAS */
+.font-display {
+  font-family: 'Yeseva One', sans-serif;
+}
+
+.font-title,
+.font-caption,
+.font-body,
+.font-button {
+  font-family: 'Work Sans', sans-serif;
+}
+
+/* TAMAÑOS DE FUENTE */
+.text-display-1 { font-size: 3rem; } /* 48px */
+.text-display-2 { font-size: 2rem; } /* 32px */
+.text-title { font-size: 1.625rem; } /* 26px */
+.text-caption { font-size: 1.125rem; } /* 18px */
+.text-body { font-size: 1rem; } /* 16px */
+.text-body-2 { font-size: 1.125rem; } /* 18px */
+.text-button { font-size: 1rem; } /* 16px */
+.text-small { font-size: 0.875rem; } /* 14px */
+
+/* COLORES DEL TEXTO */
+.text-azul { color: var(--azul); }
+.text-azul-oscuro { color: var(--azul-oscuro); }
+.text-celeste { color: var(--celeste); }
+.text-celeste-claro { color: var(--celeste-claro); }
+.text-verde { color: var(--verde); }
+
+/* BOTONES */
+.btn {
+  padding: 10px 20px;
+  border-radius: 9999px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-verde {
+  background-color: var(--verde);
+  color: var(--azul-oscuro);
+}
+
+.btn-verde:hover {
+  background-color: #00897b;
+}
+
+/* HEADER */
+.navbar {
+  background-color: var(--azul);
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar div {
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+}
+
+/* SECCIÓN HERO */
+.hero {
+  background-image: url(Resources/medico-fondo.png);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1rem;
+}
+
+.hero h1 {
+  color: var(--azul-oscuro);
+}
+
+/* FOOTER */
+.footer {
+  background-color: var(--azul-oscuro);
+  color: white;
+  padding: 24px 0;
+  text-align: center;
+}
