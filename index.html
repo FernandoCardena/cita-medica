@@ -226,28 +226,42 @@
     </main>
 
     <!-- Footer -->
-    <footer>
-        <div>
-            <div>
-                <h3>Ubícanos en:</h3>
-                <p>Calle Ladislao Cabrera, Valdez N° 42 Urb. Pablo VI</p>
-            </div>
-            <div>
-                <h3>Contáctanos</h3>
-                <p>WhatsApp: 978 262 167</p>
-                <p>Email: informes@medisur.com.pe</p>
-            </div>
-            <div>
-                <h3>Síguenos en:</h3>
-                <div>
-                    <a href="#"><img src="Resources/icon-facebook.svg" alt="Facebook"></a>
-                    <a href="#"><img src="Resources/icon-instagram.svg" alt="Instagram"></a>
-                </div>
-            </div>
-        </div>
-        <div>
-            <p>&copy; 2025 MEDISUR Todos los derechos reservados.</p>
-        </div>
-    </footer>
+        <footer class="bg-azul-oscuro text-white py-6">
+          <div class="container mx-auto px-4">
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-4">
+                  <!-- Ubicación -->
+                  <div class="text-center md:text-left">
+                      <h3 class="font-title mb-4">Ubícanos en:</h3>
+                      <p class="mb-2 font-body">
+                          Calle Ladislao Cabrera,<br>
+                          Valdez N° 42 Urb.<br>
+                          Pablo VI
+                      </p>
+                  </div>
+                  <!-- Contacto -->
+                  <div class="text-center">
+                      <h3 class="font-title mb-4">Contáctanos</h3>
+                      <p class="mb-2 font-body">WhatsApp: <strong>978 262 167</strong></p>
+                      <p class="mb-2 font-body">Email: <a href="mailto:informes@medisur.com.pe" class="text-celeste hover:text-celeste-claro">informes@medisur.com.pe</a></p>
+                  </div>
+                  <!-- Redes Sociales -->
+                  <div class="text-center md:text-right">
+                      <h3 class="font-title mb-4">Síguenos en:</h3>
+                      <div class="flex justify-center md:justify-end space-x-4">
+                          <a href="#" class="hover:text-celeste">
+                              <img src="Resources/icon-facebook.svg" alt="Facebook" class="w-6 h-6">
+                          </a>
+                          <a href="#" class="hover:text-celeste">
+                              <img src="Resources/icon-instagram.svg" alt="Instagram" class="w-6 h-6">
+                          </a>
+                      </div>
+                  </div>
+              </div>
+              <!-- Derechos de autor -->
+              <div class="text-center border-t border-azul pt-4">
+                  <p class="font-body">&copy; 2025 MEDISUR Todos los derechos reservados.</p>
+              </div>
+          </div>
+        </footer>
 </body>
 </html>
