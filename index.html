@@ -92,39 +92,25 @@
 </html>
 
 
-    <!-- Main Content -->
-    <main>
+<main class="mx-auto -mt-4 relative">
         <!-- Hero Section -->
-        <section>
-            <h2>CUIDANDO TU SALUD</h2>
-            <h1>Liderar el Camino en Excelencia Médica</h1>
-            <button>Nuestros Servicios</button>
-        </section>
-
-        <!-- Welcome Section -->
-        <section>
-            <p>BIENVENIDO A MEDISUR</p>
-            <p>Nos Enfocamos en Brindarte las Mejores Soluciones de Salud</p>
-            <p>En Medisur, nos dedicamos a ofrecer servicios médicos integrales...</p>
-        </section>
-
-        <!-- Services Section -->
-        <section>
-            <h2>ATENCIÓN EN LA QUE PUEDES CREER</h2>
-            <h2>Nuestros Servicios</h2>
-            <div>
-                <p>Pasón por Poner a los Pacientes en Primer Lugar</p>
-                <ul>
-                    <li>Pasión por la curación</li>
-                    <li>Atención 5 estrellas</li>
-                    <li>Nuestro Mejor Esfuerzo</li>
-                    <li>Creemos en Nosotros</li>
-                    <li>Un Legado de Excelencia</li>
-                    <li>Siempre Atentos</li>
-                </ul>
-                <img src="Resources/image-atencion.png" alt="Nuestros Servicios">
+        <section class="bg-[url(Resources/medico-fondo.png)] bg-cover bg-center text-white h-[600px] flex flex-col items-start justify-center pl-4 sm:pl-10">
+            <div class="text-left">
+                <h2 class="text-caption tracking-widest">CUIDANDO TU SALUD</h2>
+                <h1 class="text-azul-oscuro text-display-1 font-display mt-2 max-w-2xl leading-relaxed">Liderar el Camino en Excelencia Médica</h1>
+            </div>
+            <div class="mt-4 sm:mt-8">
+                <button class="bg-verde text-azul-oscuro px-6 py-2 sm:px-9 sm:py-3 rounded-full font-button">Nuestros Servicios</button>
             </div>
         </section>
+
+        <!-- Botón de Programar Cita (superpuesto en la parte izquierda) -->
+        <div class="absolute left-4 sm:left-10 -translate-y-1/2">
+            <button class="bg-azul text-white px-6 py-2 sm:px-10 sm:py-4 rounded-lg flex items-center shadow-lg font-button">
+                Programar una Cita
+                <img src="Resources/cita-icon.svg" alt="Icono" class="ml-4 sm:ml-9 h-6 sm:h-15 w-6 sm:w-15">
+            </button>
+        </div>
 
         <!-- Specialties Section -->
         <section>
